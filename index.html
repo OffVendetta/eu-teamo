@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Você Me Ama?</title>
+    <style>
+        /* Reset básico para garantir consistência */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #9b0b0b; /* Cor de fundo preta */
+            color: #ffffff; /* Texto branco */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #ffffff; /* Vermelho vinho */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 20px;
+        }
+
+        .button {
+            background-color: #4903b9; /* Vermelho vinho */
+            color: #7ef330;
+            border: 2px solid #fff;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #1aca0ad7; /* Cor mais intensa ao passar o mouse */
+            transform: scale(1.05);
+        }
+
+        .button:focus {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Você me aceita de volta em sua vida, pra todo o sempre??</h1>
+
+    <div class="buttons">
+        <button class="button" onclick="redirectNo()">Não</button>
+        <button class="button" onclick="redirectYes()">Sim</button>
+    </div>
+
+    <script>
+        // Função para redirecionar quando clicar em "Não"
+        function redirectNo() {
+            // Aqui você pode colocar um link para algo triste ou engraçado
+            window.location.href = "https://youtu.be/4HCmddSunWA?si=nLgQDZhQePx5fQ3R"; // Um link engraçado (Rickroll)
+        }
+
+        // Função para redirecionar quando clicar em "Sim"
+        function redirectYes() {
+            // Aqui você pode colocar o link para o vídeo romântico ou música
+            window.location.href = "https://youtu.be/JRJj4z-prvM?si=FPE4KQZsYorMM9sY"; // Exemplo de música romântica
+        }
+    </script>
+
+</body>
+</html>
